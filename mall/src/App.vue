@@ -1,14 +1,18 @@
 <template>
   <div>
-    <router-link to="/home">Home</router-link> |
-    <router-link to="/about">About</router-link>
     <router-view />
+    <main-tab-bar />
   </div>
 </template>
 
 <script>
+import MainTabBar from "@/components/content/mainTabBar/MainTabBar"
+
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    MainTabBar
+  }
 }
 </script>
 
