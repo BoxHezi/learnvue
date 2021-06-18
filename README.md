@@ -5,3 +5,7 @@
 - [Vuex](./learnvuex/)
 - [axios](./learnaxios/)
 - [tabbar](./tabbar)
+
+## Mall
+a learning project
+- [mall](./mall)
