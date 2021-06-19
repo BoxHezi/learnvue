@@ -3,7 +3,6 @@
     <nav-bar class="home-nav">
       <template v-slot:center>Mall</template>
     </nav-bar>
-    <h2>Home</h2>
     <ol>
       <li v-for="item in this.banner" v-bind:key="item">
         <img :src="item.image" />
@@ -25,11 +24,15 @@ export default {
     return {
       banner: {
         type: Array,
-        default: []
+        default() {
+          return [];
+        }
       },
       recommend: {
         type: Array,
-        default: []
+        default() {
+          return [];
+        }
       }
     };
   },
@@ -49,6 +52,7 @@ export default {
   background-color: var(--color-tint);
   color: #ffffff;
   font-weight: bold;
+  margin-bottom: 2px;
 }
 
 img {
