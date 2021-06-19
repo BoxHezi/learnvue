@@ -72,9 +72,6 @@ export default {
   components: {
     TabBar,
     TabBarItem,
-  },
-  created() {
-    console.log("Created");
   }
 };
 </script>
